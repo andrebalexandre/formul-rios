@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+
+<style>
+
+.bt
+{
+    width: 100px;
+    height: 70px;
+    background-color: aqua;
+    font-size: 20px;
+    cursor: pointer;
+    cursor: url("minha_imagem.png");
+}
+.bt:hover
+{
+    background-color: blue;
+}
+
+.comentario
+{
+    width: 90%;
+    height: 200px;
+    resize: none;
+}
+</style>
+
+</head>
+<body>
+   
+   <fieldset>
+        <legend>dados do picolé</legend>
+        selecione um sabor:
+
+        <select>
+            <option>Pimenta</option>
+            <option>batata doce</option>
+            <option>bosta</option>
+        </select>
+        <br> <br>
+        Escolha um molho especial:
+        <input type="radio" name="molhos">Enxofre
+        <input type="radio" name="molhos">morte
+        <br> <br>
+        Escolha a cor da embalagem:
+        <input type="checkbox">&nbsp;preta
+        <input type="checkbox">&nbsp;azul
+        <input type="checkbox">&nbsp;rosa 
+        <br> <br>
+        Escolha a cor do palito: <input type="color">
+   </fieldset> 
+
+   <fieldset>
+        <legend>dados de entrega</legend>
+        endereço: <input type="text">
+        <br> <br>
+    cidade: <input type="text">
+    <br> <br>
+    data de entrega: <input type="date">
+    <br> <br>
+    Comentários:  
+     <br>
+    <textarea>deixe seu comentário</textarea>
+</fieldset>
+
+   <button class="bt">Enviar</button>
+   <button class="bt">Cancelar</button>
+</body>
+</html>
